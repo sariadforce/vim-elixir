@@ -12,7 +12,7 @@ class Buffer
     @file = ".fixture.#{type}"
     @vim = vim
   end
-
+erl_crash.dump
   def reindent(content)
     with_file content do
       min_indent = content.each_line.map { |line| line[/\s*/].size }.min
